@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS  # Import Flask-CORS
 from main import *
 
@@ -53,7 +53,7 @@ def create_grant():
         # set up trustlines with contractors:
     for contractor in contractor_wallets:
         setup_trustline(grant_creator, contractor)
-    return
+    return jsonify({"message": "Grants created successfully!"}), 200
 
 @app.route('/send_tusd', methods=['POST'])
 def send_tusd():
