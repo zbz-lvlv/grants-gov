@@ -47,7 +47,7 @@ const GrantDetails = ({  }) => {
           </Typography>
 
           <Typography sx={{ fontFamily: 'Poppins-Medium', fontSize: '18px' }}>{`Agency:`}
-            <Typography variant="span" sx={{ marginLeft: '6px', fontFamily: 'Poppins-Medium', color: '#888' }}>{`Dept of Education`}</Typography>
+            <Typography variant="span" sx={{ marginLeft: '6px', fontFamily: 'Poppins-Medium', color: '#888' }}>{`National Park Service`}</Typography>
           </Typography>
 
           <Typography sx={{ fontFamily: 'Poppins-Medium', fontSize: '18px' }}>{`Posted Date:`}

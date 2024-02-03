@@ -66,7 +66,12 @@ const CreateNewGrant = () => {
       .then(response => response.json())
       .then(data => {
         console.log('Success:', data);
+        window.location.href = '/all_grants_page';
       })
+      .catch((error) => {
+        console.error('Error:', error);
+        window.location.href = '/all_grants_page';
+      });
 
   }
 
