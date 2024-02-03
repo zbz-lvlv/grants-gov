@@ -1,7 +1,9 @@
 from flask import Flask, request
+from flask_cors import CORS  # Import Flask-CORS
 from main import *
 
 app = Flask(__name__)
+CORS(app, origins="http://localhost:3000")  # Enable CORS for all endpoints and allow requests from http://localhost:3000
 
 @app.route('/get_creator')
 def hello_world():
